@@ -1,12 +1,17 @@
 import React from 'react';
-import './App.css';
+import About from './components/About';
+import Contact from './components/Contact';
 
-function App() {
-  return (
-    <div>
-      
-    </div>
-  );
+function App() {	
+
+	return (
+		<div>
+      <main>
+      <About></About>	
+      <Contact></Contact>	
+      </main>	
+		</div>
+	);
 }
 
 export default App;

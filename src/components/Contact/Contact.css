@@ -1,0 +1,102 @@
+.Contact {
+	padding: 8rem;
+}
+
+.Contact-wrapper {
+	position: relative;
+	background-color: #148c91;
+	border-radius: 10px;
+	padding: 5rem;
+}
+
+.Contact-wrapper:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	border: 20px solid #86c6e4;
+	background-color: #8bbbd6;
+	z-index: -1;
+}
+
+.Contact h1 {
+	color: rgb(55, 137, 231);
+	margin-bottom: 4rem;
+}
+
+.Contact input,
+.Contact textarea {
+	border: 5px solid var(--pink);
+	display: block;
+	padding: 7px 15px;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border-radius: 10px;
+	background-color: rgba(226, 235, 248, 0.75);
+}
+
+.Contact input:focus,
+.Contact textarea:focus {
+	background-color: rgb(137, 184, 196);
+	outline: none;
+}
+
+.Contact button {
+	color: #66615f;
+	background:rgb(129, 181, 230);
+	border: none;
+	text-align: center;
+	padding: 1rem;
+	font-size: 1rem;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border-radius: 10px;
+	font-family: Arial, sans-serif;
+}
+
+.Contact button:hover {	
+	background: rgb(80, 205, 209);
+	transition: all .2s;
+}
+
+.Contact label {
+	color: rgb(47, 60, 231);
+}
+
+.Contact-error-text {
+	color: rgb(233, 94, 94);
+}
+
+@media screen and (max-width: 768px) {
+	.Contact {
+		padding: 4rem;
+	}
+
+	.Contact-wrapper {
+		padding: 4rem;
+	}
+
+	.Contact h3 {
+		text-align: center;
+	}
+
+	.Contact button {
+		font-size: .7rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.Contact {
+		padding: 2rem;
+	}
+
+	.Contact-wrapper {
+		padding: 2rem 1rem;
+	}
+}
